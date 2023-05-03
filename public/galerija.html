@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+	<meta charset = "UTF-8">	
+<!-- BS, JS, FONTS -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 	
+<!-- FONT -->
+	<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- CSS -->		
+	<link rel = "stylesheet" type = "text/css" href = "bsSbs.css"/>
+	</head>
+	<body id="index" data-spy="scroll" data-target=".navbar" data-offset="50">
+<!-- NAVBAR-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container-fluid">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button> 
+<!-- NAVBAR LOGO -->		  
+			<a class = "navbar-brand" href = "index.html">		
+			<p class = "logoParagraph">
+			  <text style = "color: #737373; font-size:12px; font-weight:0; letter-spacing:-0,5px; margin:-4px;">PLESNI STUDIO</text>
+			<p>				
+			<p class = "logoParagraph">
+			  <text style = "color: #cc0000;font-size:30px; font-weight:600; letter-spacing:-0,5px;margin:-6px;">STEP</text>
+			  <text style = "color: #737373;font-size:30px; font-weight:0; letter-spacing:-0,5px;">BY</text>
+			  <text style = "color: #cc0000;font-size:30px; font-weight:600; letter-spacing:-0,5px;margin:-6px;">STEP</text>
+			</p>		
+			</a>
+		  </div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right"> 
+			<li><a href = "index.html">Početna</a></li>		
+<!-- DROPDOWN NAVBAR-->		
+			<li class="dropdown">
+			  <a class="dropdown-toggle" data-toggle="dropdown" href="#">O nama<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+				<li><a href="oNama.html#virtualniObilazak">Promo video</a></li>						
+				<li><a href="oNama.html#natjecanjaInastupi">Natjecanja i nastupi</a></li>	
+				<li><a href="oNama.html#voditelji">Voditelji</a></li>					
+				<li><a href="oNama.html#lokacije">Lokacije</a></li>	
+			  </ul>
+			</li> 			
+			<li class="dropdown">
+			  <a class="dropdown-toggle" data-toggle="dropdown" href="program.html">Program<span class="caret"></span></a>
+			  <ul class="dropdown-menu">
+				<li><a href="program.html#upisi">Upisi</a></li>
+				<li><a href="program.html#dobneKategorije">Dobne kategorije</a></li>
+				<li><a href="program.html#stiloviPlesa">Plesni stilovi</a></li> 				
+			  </ul>
+			</li>	
+			<li><a href="#galerija">Galerija</a></li>				
+			<li><a href="kontakt.html">Kontakt</a></li>					
+		  </ul>
+		</div>
+	  </div>
+	</nav> 
+<!-- Europska i svjetska prvenstva -->
+	<section id = "galerija">
+	  <br>
+	<p class = "pageHeader">Europska i svjetska prvenstva</p>
+		<div class="row">
+		  <div class="column">
+			<img src="photos/s1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		  </div>
+		</div>	
+		<div class="row">
+		  <div class="column">
+			<img src="photos/s5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+		  </div>
+		</div>			
+<!-- 		
+		<div class="row">
+		  <div class="column">
+			<img src="photos/s9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor">
+		  </div>		  
+		</div>			
+		<div class="row">
+		  <div class="column">
+			<img src="photos/s16.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s17.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s18.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor">
+		  </div>		  
+		  <div class="column">
+			<img src="photos/s20.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor">
+		  </div> 
+		</div>		-->			
+<!--			
+		<div class="row">
+		  <div class="column">
+			<img src="photos/s22.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s23.jpg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s24.jpg" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s25.jpg" style="width:100%" onclick="openModal();currentSlide(25)" class="hover-shadow cursor">
+		  </div>
+		</div>	 -->
+		<div class="row">
+		  <div class="column">
+			<img src="photos/s26.jpg" style="width:100%" onclick="openModal();currentSlide(26)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s27.jpg" style="width:100%" onclick="openModal();currentSlide(27)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s28.jpg" style="width:100%" onclick="openModal();currentSlide(28)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s29.jpg" style="width:100%" onclick="openModal();currentSlide(29)" class="hover-shadow cursor">
+		  </div>
+		</div>		
+<!-- 28
+		<div class="row">
+		  <div class="column">
+			<img src="photos/s30.jpg" style="width:100%" onclick="openModal();currentSlide(30)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s31.jpg" style="width:100%" onclick="openModal();currentSlide(31)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s32.jpg" style="width:100%" onclick="openModal();currentSlide(32)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s33.jpg" style="width:100%" onclick="openModal();currentSlide(33)" class="hover-shadow cursor">
+		  </div>
+		</div>			
+		<div class="row">
+		  <div class="column">
+			<img src="photos/s34.jpg" style="width:100%" onclick="openModal();currentSlide(34)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s36.jpg" style="width:100%" onclick="openModal();currentSlide(36)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s37.jpg" style="width:100%" onclick="openModal();currentSlide(37)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s40.jpg" style="width:100%" onclick="openModal();currentSlide(40)" class="hover-shadow cursor">
+		  </div>
+		</div>		 -->
+<!--
+		<div class="row">
+		  <div class="column">
+			<img src="photos/s42.jpg" style="width:100%" onclick="openModal();currentSlide(42)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s44.jpg" style="width:100%" onclick="openModal();currentSlide(44)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s45.jpg" style="width:100%" onclick="openModal();currentSlide(45)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/s47.jpg" style="width:100%" onclick="openModal();currentSlide(47)" class="hover-shadow cursor">
+		  </div>
+		</div>	 -->	
+	<p class = "pageHeader">Državna prvenstva</p>	
+		<div class="row">
+		  <div class="column">
+			<img src="photos/d2.jpg" style="width:100%" onclick="openModal();currentSlide(49)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d5.jpg" style="width:100%" onclick="openModal();currentSlide(52)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d6.jpg" style="width:100%" onclick="openModal();currentSlide(53)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d7.jpg" style="width:100%" onclick="openModal();currentSlide(54)" class="hover-shadow cursor">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="column">
+			<img src="photos/d8.jpg" style="width:100%" onclick="openModal();currentSlide(55)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d9.jpg" style="width:100%" onclick="openModal();currentSlide(56)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d10.jpg" style="width:100%" onclick="openModal();currentSlide(57)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d11.jpg" style="width:100%" onclick="openModal();currentSlide(58)" class="hover-shadow cursor">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="column">
+			<img src="photos/d12.jpg" style="width:100%" onclick="openModal();currentSlide(59)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d13.jpg" style="width:100%" onclick="openModal();currentSlide(60)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d14.jpg" style="width:100%" onclick="openModal();currentSlide(61)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d15.jpg" style="width:100%" onclick="openModal();currentSlide(62)" class="hover-shadow cursor">
+		  </div>
+		</div>
+		<!--<div class="row">
+		  <div class="column">
+			<img src="photos/d16.jpg" style="width:100%" onclick="openModal();currentSlide(63)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d17.jpg" style="width:100%" onclick="openModal();currentSlide(64)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d18.jpg" style="width:100%" onclick="openModal();currentSlide(65)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/d19.jpg" style="width:100%" onclick="openModal();currentSlide(66)" class="hover-shadow cursor">
+		  </div>
+		</div> -->
+	  <p class = "pageHeader">Nastupi</p>	
+		<div class="row">
+		  <div class="column">
+			<img src="photos/n1.jpg" style="width:100%" onclick="openModal();currentSlide(67)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/n2.jpg" style="width:100%" onclick="openModal();currentSlide(68)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/n3.jpg" style="width:100%" onclick="openModal();currentSlide(69)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/n4.jpg" style="width:100%" onclick="openModal();currentSlide(70)" class="hover-shadow cursor">
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="column">
+			<img src="photos/n5.jpg" style="width:100%" onclick="openModal();currentSlide(71)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/n6.jpg" style="width:100%" onclick="openModal();currentSlide(72)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/n7.jpg" style="width:100%" onclick="openModal();currentSlide(73)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/n8.jpg" style="width:100%" onclick="openModal();currentSlide(74)" class="hover-shadow cursor">
+		  </div>
+		</div>
+		<!--<div class="row">
+		  <div class="column">
+			<img src="photos/n9.jpg" style="width:100%" onclick="openModal();currentSlide(75)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/n10.jpg" style="width:100%" onclick="openModal();currentSlide(76)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/n11.jpg" style="width:100%" onclick="openModal();currentSlide(77)" class="hover-shadow cursor">
+		  </div>
+		</div>--> 
+	  <p class = "pageHeader">Naši najmlađi</p>
+		<div class="row">
+		  <div class="column">
+			<img src="photos/nn1.jpg" style="width:100%" onclick="openModal();currentSlide(78)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/nn2.jpg" style="width:100%" onclick="openModal();currentSlide(79)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/nn3.jpg" style="width:100%" onclick="openModal();currentSlide(80)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/nn4.jpg" style="width:100%" onclick="openModal();currentSlide(81)" class="hover-shadow cursor">
+		  </div>
+		</div>
+		<!--<div class="row">
+		  <div class="column">
+			<img src="photos/nn5.jpg" style="width:100%" onclick="openModal();currentSlide(82)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/nn6.jpg" style="width:100%" onclick="openModal();currentSlide(83)" class="hover-shadow cursor">
+		  </div>
+		  <div class="column">
+			<img src="photos/nn7.jpg" style="width:100%" onclick="openModal();currentSlide(84)" class="hover-shadow cursor">
+		  </div>
+		</div>-->
+		<div id="myModal" class="modal"> 
+		<span id= "closeGallery" class="close cursor" onclick="closeModal()">&#10006;</span>	
+		  <div class="modal-content">	
+<!-- europska i svjetzska prvenstva -->			  
+			<div class="mySlides">
+			  <div class="numbertext">1 / 47 - europska i svjetska prvenstva</div>  
+			  <img src="photos/s1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">2 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">3 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s3.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">4 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">5 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">6 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s6.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">7 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s7.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">8 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s8.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">9 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s9.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">10 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s10.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">11 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s11.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">12 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s12.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">13 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s13.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">14 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s14.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">15/ 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s15.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">16 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s16.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">17 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s17.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">18 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s18.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">19 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s19.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">20 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s20.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">21 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s21.jpg" style="width:100%">
+			</div>				
+			<div class="mySlides">
+			  <div class="numbertext">22 / 47 - europska i svjetska prvenstva</div>  
+			  <img src="photos/s22.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">23 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s23.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">24 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s24.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">25 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s25.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">26 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s26.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">27 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s27.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">28 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s28.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">29 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s29.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">30 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s30.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">31 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s31.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">32 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s32.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">33 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s33.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">34 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s34.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">35 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s35.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">36 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s36.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">37 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s37.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">38 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s38.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">39 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s39.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">40 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s40.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">41 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s41.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">42 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s42.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">43 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s43.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">44 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s44.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">45 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s45.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">46 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s46.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">47 / 47 - europska i svjetska prvenstva</div>
+			  <img src="photos/s47.jpg" style="width:100%">
+			</div>				
+<!-- državna prvenstva -->		
+			<div class="mySlides">
+			  <div class="numbertext">1 / 19 - državna prvenstva</div>  
+			  <img src="photos/d1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">2 / 19 - državna prvenstva</div>
+			  <img src="photos/d2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">3 / 19 - državna prvenstva</div>
+			  <img src="photos/d3.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">4 / 19 - državna prvenstva</div>
+			  <img src="photos/d4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">5 / 19 - državna prvenstva</div>
+			  <img src="photos/d5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">6 / 19 - državna prvenstva</div>
+			  <img src="photos/d6.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">7 / 19 - državna prvenstva</div>
+			  <img src="photos/d7.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">8 / 19 - državna prvenstva</div>
+			  <img src="photos/d8.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">9 / 19 - državna prvenstva</div>
+			  <img src="photos/d9.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">10 / 19 - državna prvenstva</div>
+			  <img src="photos/d10.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">11 / 19 - državna prvenstva</div>
+			  <img src="photos/d11.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">12 / 19 - državna prvenstva</div>
+			  <img src="photos/d12.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">13 / 19 - državna prvenstva</div>
+			  <img src="photos/d13.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">14 / 19 - državna prvenstva</div>
+			  <img src="photos/d14.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">15/ 19 - državna prvenstva</div>
+			  <img src="photos/d15.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">16 / 19 - državna prvenstva</div>
+			  <img src="photos/d16.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">17 / 19 - državna prvenstva</div>
+			  <img src="photos/d17.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">18 / 19 - državna prvenstva</div>
+			  <img src="photos/d18.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">19 / 19 - državna prvenstva</div>
+			  <img src="photos/d19.jpg" style="width:100%">
+			</div>
+<!-- nastupi -->					
+			<div class="mySlides">
+			  <div class="numbertext">1 / 11 - naši nastupi</div>
+			  <img src="photos/n1.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">2 / 11 - naši nastupi</div>
+			  <img src="photos/n2.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">3 / 11 - naši nastupi</div>
+			  <img src="photos/n3.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">4 / 11 - naši nastupi</div>
+			  <img src="photos/n4.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">5 / 11 - naši nastupi</div>
+			  <img src="photos/n5.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">6 / 11 - naši nastupi</div>
+			  <img src="photos/n6.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">7 / 11 - naši nastupi</div>
+			  <img src="photos/n7.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">8 / 11 - naši nastupi</div>
+			  <img src="photos/n8.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">9 / 11 - naši nastupi</div>
+			  <img src="photos/n9.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">10 / 11 - naši nastupi</div>
+			  <img src="photos/n10.jpg" style="width:100%">
+			</div>
+			<div class="mySlides">
+			  <div class="numbertext">11 / 11 - naši nastupi</div>
+			  <img src="photos/n11.jpg" style="width:100%">
+			</div>
+<!-- naši najmlađi -->			
+			<div class="mySlides">
+			  <div class="numbertext">1 / 7 - naši najmlađi</div>
+			  <img src="photos/nn1.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">2 / 7 - naši najmlađi</div>
+			  <img src="photos/nn2.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">3 / 7 - naši najmlađi</div>
+			  <img src="photos/nn3.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">4 / 7 - naši najmlađi</div>
+			  <img src="photos/nn4.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">5 / 7 - naši najmlađi</div>
+			  <img src="photos/nn5.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">6 / 7 - naši najmlađi</div>
+			  <img src="photos/nn6.jpg" style="width:100%">
+			</div>	
+			<div class="mySlides">
+			  <div class="numbertext">7 / 7 - naši najmlađi</div>
+			  <img src="photos/nn7.jpg" style="width:100%">
+			</div>		
+<!-- SLIDE CONTROLS -->
+			  <a class="left carousel-control" href="#myCarousel" role="button" onclick="plusSlides(-1)">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" role="button" onclick="plusSlides(1)">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			  </a>
+			</div>			
+		  </div>
+	</section>	
+<!-- FOOTER -->
+	<footer>
+      <div class = "container">
+        <div class = "row">
+          <div class = "col-md-4">
+            <p class = "contactIcons"><i class = "fa fa-phone-square"></i><a href="tel:+385 1 231 92 58" class = "contactButtons"> +385 1 231 92 58</a></p>
+            <p class = "contactIcons"><i class = "fa fa-envelope"></i><a href="mailto:info@stepbystep.hr" class = "contactButtons"> info@stepbystep.hr</a></p>
+            <p class = "contactIcons"><i class = "fa fa-building"></i> II Maksimirsko naselje 3, 10000 ZAGREB</p>
+          </div>
+          <div class = "col-md-4">
+            <ul class = "list-inline social-buttons">
+			  <li class = "list-inline-item">
+                <a href = "https://www.facebook.com/PlesniStudioStepbyStep/">
+                  <i class = "fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class = "list-inline-item">
+                <a href = "https://www.youtube.com/channel/UCSRV4icdYvqMsGBLLO0S9uw">
+                  <i class = "fa fa-youtube"></i>
+                </a>
+              </li>
+              <li class = "list-inline-item">
+                <a href = "https://www.instagram.com/explore/locations/1013800398/plesni-studio-step-by-step/?hl=en">
+                  <i class = "fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>  
+		  <div class = "col-md-4"></p>	
+            <p class = "copyrightText">Copyright &copy; StepByStep 2019</p>	
+          </div>
+		</div>
+      </div>
+    </footer>
+	<script>
+		function openModal() {
+		  document.getElementById('myModal').style.display = "block";
+		}
+
+		function closeModal() {
+		  document.getElementById('myModal').style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("demo");
+		  var captionText = document.getElementById("caption");
+		  if (n > slides.length) {slideIndex = 1}
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none";
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			  dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";
+		  dots[slideIndex-1].className += " active";
+		  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+	</script>
+  </body>		
+</html> 
+
